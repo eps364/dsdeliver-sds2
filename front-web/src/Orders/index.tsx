@@ -23,7 +23,7 @@ function Orders() {
       .then(reponse => setProducts(reponse.data))
       .catch(error => console.log(error))
     console.log(products)
-  }, [])
+  }, [products])
 
   const handleSelectProduct = (product: Product) => {
     const isAlreadySelected = checkIsSelected(selectedProducts, product)

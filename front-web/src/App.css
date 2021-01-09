@@ -19,4 +19,5 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--primary-hover-color);
 }
