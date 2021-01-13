@@ -1,10 +1,10 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Home from './Home';
-import Orders from './Orders';
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import Home from './Home'
+import Orders from './Orders'
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
 function Routes() {
     return (
@@ -24,4 +24,4 @@ function Routes() {
     )
 }
 
-export default Routes;
+export default Routes

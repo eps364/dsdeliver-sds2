@@ -9,16 +9,16 @@ function App() {
   let [fontsLoaded] = useFonts({
     OpenSans_400Regular,
     OpenSans_700Bold
-  });
+  })
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <AppLoading />
   }
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Routes />
     </View>
-  );
+  )
 }
 
 export default App
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-});
+})
