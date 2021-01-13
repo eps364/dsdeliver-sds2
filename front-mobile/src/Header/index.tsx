@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 
 
-export default function Header() {
+function Header() {
   return (
     <View style={styles.container}>
         <Image source={require('../assets/logo.png')} />
@@ -11,6 +11,7 @@ export default function Header() {
   )
 }
 
+export default Header
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#DA5c5c',
