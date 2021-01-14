@@ -1,13 +1,11 @@
-//const API_URL = process.env.REACT_APP_API_URL_FRONTWEB
-
-const API_URL='' // http://localhost:8080
+import {REACT_APP_API_URL} from '../.env.json'
 
 import axios from "axios";
 
 export function fetchOrders(){
-    return axios(`${API_URL}/orders`)
+    return axios(`${REACT_APP_API_URL}/orders`)
 }
 
 export function confirmDelivery(orderId:number){
-    return axios.put(`${API_URL}/orders/${orderId}/delivered`)
+    return axios.put(`${REACT_APP_API_URL}/orders/${orderId}/delivered`)
 }
